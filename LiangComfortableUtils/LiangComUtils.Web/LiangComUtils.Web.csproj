@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BE3C066-B105-439A-B756-DC115B2840E4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiangComUtils.Web</RootNamespace>
+    <AssemblyName>LiangComUtils.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Expression.Interactions">
+      <HintPath>..\LiangComUtils.Libs\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\LiangComUtils.Libs\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Controls\AllPageControls\Footer.ascx" />
+    <Content Include="Controls\AllPageControls\Header.ascx" />
+    <Content Include="index.aspx" />
+    <Content Include="index.htm" />
+    <Content Include="Main\Bookmark\UserBookmark.aspx" />
+    <Content Include="Main\HomePage\Default.aspx" />
+    <Content Include="Main\HomePage\DefaultStatic.aspx" />
+    <Content Include="Main\Map\ArcgisForJavascript.aspx" />
+    <Content Include="Main\UserAccount\Login.aspx" />
+    <Content Include="Main\UserAccount\Logout.aspx" />
+    <Content Include="Main\UserAccount\Personal.aspx" />
+    <Content Include="Scripts\ArcgisForJavascript\esri-dojo.js" />
+    <Content Include="Scripts\ArcgisForJavascript\jsapi_vsdoc10_v35.js" />
+    <Content Include="Scripts\js\LX.Map.js" />
+    <Content Include="Scripts\jQuery.cookie.js" />
+    <Content Include="Scripts\js-facade\cufon-replace.js" />
+    <Content Include="Scripts\js-facade\cufon-yui.js" />
+    <Content Include="Scripts\js-facade\gallery_init.js" />
+    <Content Include="Scripts\js-facade\html5.js" />
+    <Content Include="Scripts\js-facade\Humanst521_BT_400.font.js" />
+    <Content Include="Scripts\js-facade\Humanst521_Lt_BT_400.font.js" />
+    <Content Include="Scripts\js-facade\IE9.js" />
+    <Content Include="Scripts\js-facade\jquery-1.4.2.min.js" />
+    <Content Include="Scripts\js-facade\loopedslider.min.js" />
+    <Content Include="Scripts\js-facade\roundabout.js" />
+    <Content Include="Scripts\js-facade\roundabout_shapes.js" />
+    <Content Include="Scripts\jquery.cookies.2.2.0.min.js" />
+    <Content Include="Scripts\js\login-box.js" />
+    <Content Include="Scripts\js\LX.Func.js" />
+    <Content Include="Scripts\js\LX.Models.js" />
+    <Content Include="Scripts\LX.js" />
+    <Content Include="Service\ServiceBookmark.svc" />
+    <Content Include="Service\ServiceUserAccount.svc" />
+    <Content Include="Styles\SkyStyle\css\Map\esri.css" />
+    <Content Include="Styles\SkyStyle\css\Map\nihilo.css" />
+    <Content Include="Styles\SkyStyle\images\Map\025.png" />
+    <Content Include="Styles\SkyStyle\images\Map\026.png" />
+    <Content Include="Styles\SkyStyle\images\Map\027.png" />
+    <Content Include="Styles\SkyStyle\images\Map\15.png" />
+    <Content Include="Styles\SkyStyle\images\Map\16.png" />
+    <Content Include="Styles\SkyStyle\images\Map\bus.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_12.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_13.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_13_1.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_13_2.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_18_1.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_18_2.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_20.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_21.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_22.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_23.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_24.png" />
+    <Content Include="Styles\SkyStyle\images\Map\journey_bu_3.png" />
+    <Content Include="Styles\SkyStyle\images\Map\pause_b.png" />
+    <Content Include="Styles\SkyStyle\images\Map\rail.png" />
+    <Content Include="Styles\SkyStyle\images\Map\Select.png" />
+    <Content Include="Styles\SkyStyle\images\Map\subway.png" />
+    <Content Include="Styles\SkyStyle\images\Map\tram.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty2.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty3.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty4.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty5.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty6.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty7.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty8.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty9.png" />
+    <Content Include="Styles\SkyStyle\images\Map\ty998.png" />
+    <Content Include="Styles\SkyStyle\images\Map\UnSelect.png" />
+    <Content Include="Styles\SkyStyle\images\Map\walk.png" />
+    <Content Include="Styles\SkyStyle\images\Map\xh.png" />
+    <Content Include="Styles\SkyStyle\images\Map\xhq.png" />
+    <Content Include="Styles\SkyStyle\images\Map\加一天.png" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\SkyStyle\css\ie\ie6.css" />
+    <Content Include="Styles\SkyStyle\css\reset.css" />
+    <Content Include="Styles\SkyStyle\css\style.css" />
+    <Content Include="Styles\SkyStyle\images\arrow1.gif" />
+    <Content Include="Styles\SkyStyle\images\banner1.jpg" />
+    <Content Include="Styles\SkyStyle\images\date-bg1.gif" />
+    <Content Include="Styles\SkyStyle\images\date-bg2.gif" />
+    <Content Include="Styles\SkyStyle\images\date-bg3.gif" />
+    <Content Include="Styles\SkyStyle\images\date-bg4.gif" />
+    <Content Include="Styles\Images\defaultPhoto.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\bg-jh.png" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\bg-jh_q.png" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\bgg2.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\bggg.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\inputbj.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\jhyh.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\login.png" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\lokn.png" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\roesbj17.png" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\xj_jh.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\xxx.jpg" />
+    <Content Include="Styles\SkyStyle\images\FloatingLoginBox\xzx.png" />
+    <Content Include="Styles\SkyStyle\images\gallerry-bg.gif" />
+    <Content Include="Styles\SkyStyle\images\header-bg.gif" />
+    <Content Include="Styles\SkyStyle\images\img1.jpg" />
+    <Content Include="Styles\SkyStyle\images\img2.jpg" />
+    <Content Include="Styles\SkyStyle\images\img3.jpg" />
+    <Content Include="Styles\SkyStyle\images\img4.jpg" />
+    <Content Include="Styles\SkyStyle\images\logo.jpg" />
+    <Content Include="Styles\SkyStyle\images\slide1.jpg" />
+    <Content Include="Styles\SkyStyle\images\slide2.jpg" />
+    <Content Include="Styles\SkyStyle\images\slide3.jpg" />
+    <Content Include="Styles\SkyStyle\images\slide4.jpg" />
+    <Content Include="Styles\SkyStyle\images\slide5.jpg" />
+    <Content Include="Styles\SkyStyle\images\temp1.jpg" />
+    <Content Include="Styles\SkyStyle\images\thumb1.jpg" />
+    <Content Include="Styles\SkyStyle\images\thumb2.jpg" />
+    <Content Include="Styles\SkyStyle\images\thumb3.jpg" />
+    <Content Include="Styles\SkyStyle\images\thumb4.jpg" />
+    <Content Include="Styles\SkyStyle\images\thumb5.jpg" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\OperateMthods.cs" />
+    <Compile Include="Controls\AllPageControls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AllPageControls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AllPageControls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\AllPageControls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Bookmark\UserBookmark.aspx.cs">
+      <DependentUpon>UserBookmark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Bookmark\UserBookmark.aspx.designer.cs">
+      <DependentUpon>UserBookmark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\HomePage\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\HomePage\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\HomePage\DefaultStatic.aspx.cs">
+      <DependentUpon>DefaultStatic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\HomePage\DefaultStatic.aspx.designer.cs">
+      <DependentUpon>DefaultStatic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Map\ArcgisForJavascript.aspx.cs">
+      <DependentUpon>ArcgisForJavascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\Map\ArcgisForJavascript.aspx.designer.cs">
+      <DependentUpon>ArcgisForJavascript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UserAccount\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\UserAccount\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UserAccount\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\UserAccount\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UserAccount\Personal.aspx.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main\UserAccount\Personal.aspx.designer.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ServiceBookmark.svc.cs">
+      <DependentUpon>ServiceBookmark.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\ServiceUserAccount.svc.cs">
+      <DependentUpon>ServiceUserAccount.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controls\BookmarkControls\" />
+    <Folder Include="Controls\UserAcountControls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LiangComUtils.Common\LiangComUtils.Common.csproj">
+      <Project>{797EF49B-4586-4216-AAB8-7571B39319D1}</Project>
+      <Name>LiangComUtils.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiangComUtils.DataAccess\LiangComUtils.DataAccess.csproj">
+      <Project>{93597CA2-5FCC-4F4D-AE28-F56245404116}</Project>
+      <Name>LiangComUtils.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiangComUtils.Models\LiangComUtils.Models.csproj">
+      <Project>{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}</Project>
+      <Name>LiangComUtils.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiangComUtils.RulesAndConfig\LiangComUtils.RulesAndConfig.csproj">
+      <Project>{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}</Project>
+      <Name>LiangComUtils.RulesAndConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LiangComUtils.ServiceServer\LiangComUtils.ServiceServer.csproj">
+      <Project>{C27191C1-7277-4BC2-96FB-AD85914DF436}</Project>
+      <Name>LiangComUtils.ServiceServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3717</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

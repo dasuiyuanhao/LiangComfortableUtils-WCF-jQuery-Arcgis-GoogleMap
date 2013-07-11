@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.Common", "LiangComUtils.Common\LiangComUtils.Common.csproj", "{797EF49B-4586-4216-AAB8-7571B39319D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.Web", "LiangComUtils.Web\LiangComUtils.Web.csproj", "{5BE3C066-B105-439A-B756-DC115B2840E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39A12141-A346-4D48-B8F8-52869270207A} = {39A12141-A346-4D48-B8F8-52869270207A}
+		{C91F9D8E-A364-49B9-980A-EDE15A017573} = {C91F9D8E-A364-49B9-980A-EDE15A017573}
+		{576134C6-2A6D-4962-929F-992B4AFDC15C} = {576134C6-2A6D-4962-929F-992B4AFDC15C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.WcfService", "LiangComUtils.WcfService\LiangComUtils.WcfService.csproj", "{C91F9D8E-A364-49B9-980A-EDE15A017573}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39A12141-A346-4D48-B8F8-52869270207A} = {39A12141-A346-4D48-B8F8-52869270207A}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.Models", "LiangComUtils.Models\LiangComUtils.Models.csproj", "{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.RulesAndConfig", "LiangComUtils.RulesAndConfig\LiangComUtils.RulesAndConfig.csproj", "{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.DataAccess", "LiangComUtils.DataAccess\LiangComUtils.DataAccess.csproj", "{93597CA2-5FCC-4F4D-AE28-F56245404116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.WebResources", "LiangComUtils.WebResources\LiangComUtils.WebResources.csproj", "{576134C6-2A6D-4962-929F-992B4AFDC15C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.Business", "LiangComUtils.Business\LiangComUtils.Business.csproj", "{39A12141-A346-4D48-B8F8-52869270207A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiangComUtils.ServiceServer", "LiangComUtils.ServiceServer\LiangComUtils.ServiceServer.csproj", "{C27191C1-7277-4BC2-96FB-AD85914DF436}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{797EF49B-4586-4216-AAB8-7571B39319D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797EF49B-4586-4216-AAB8-7571B39319D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797EF49B-4586-4216-AAB8-7571B39319D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797EF49B-4586-4216-AAB8-7571B39319D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE3C066-B105-439A-B756-DC115B2840E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE3C066-B105-439A-B756-DC115B2840E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE3C066-B105-439A-B756-DC115B2840E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE3C066-B105-439A-B756-DC115B2840E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91F9D8E-A364-49B9-980A-EDE15A017573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91F9D8E-A364-49B9-980A-EDE15A017573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91F9D8E-A364-49B9-980A-EDE15A017573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91F9D8E-A364-49B9-980A-EDE15A017573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E7FA65-C5F8-4E54-A58E-93938E3CF025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B461E10F-B4AB-47B1-A47B-6474A1B52EF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93597CA2-5FCC-4F4D-AE28-F56245404116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93597CA2-5FCC-4F4D-AE28-F56245404116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93597CA2-5FCC-4F4D-AE28-F56245404116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93597CA2-5FCC-4F4D-AE28-F56245404116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576134C6-2A6D-4962-929F-992B4AFDC15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576134C6-2A6D-4962-929F-992B4AFDC15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576134C6-2A6D-4962-929F-992B4AFDC15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576134C6-2A6D-4962-929F-992B4AFDC15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A12141-A346-4D48-B8F8-52869270207A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A12141-A346-4D48-B8F8-52869270207A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A12141-A346-4D48-B8F8-52869270207A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A12141-A346-4D48-B8F8-52869270207A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C27191C1-7277-4BC2-96FB-AD85914DF436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C27191C1-7277-4BC2-96FB-AD85914DF436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C27191C1-7277-4BC2-96FB-AD85914DF436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C27191C1-7277-4BC2-96FB-AD85914DF436}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
